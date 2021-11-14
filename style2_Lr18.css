@@ -1,0 +1,98 @@
+body{
+    margin: 0;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 500;
+}
+
+p{
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    margin: 45px;
+}
+
+#menu_p2{
+    padding: 20px 0;
+    text-align: right;
+    font-weight: 300;
+}
+
+#selected{
+    text-decoration: underline;
+}
+
+
+#page2_flex{
+    display: inline-flex;
+    padding: 3% 13%;
+}
+
+#things_p2{
+    margin: auto;
+    padding: 0 90px;
+}
+
+#heading_p2{
+    font-size: 64px;
+    font-weight: 500;
+}
+
+#text_p2{
+    margin-top: 25px;
+    font-size: 24px;
+    font-weight: 500;
+    color: #374624;
+}
+
+#button_p2{
+    display: block;
+    margin-top: 50px;
+    padding: 13px 0;
+    background: #323232;
+    color: white;
+    text-align: center;
+    width: 140px;
+    height: 25px;
+    border: 0;
+    font-size: 18px;
+    border-radius: 35px;
+    transition: 0.6s;
+}
+
+#button_p2:focus {
+    outline: 0;
+}
+
+#button_p2:before {
+    background: rgba(255, 255, 255, 0.5);
+    opacity: 0.5;
+    filter: blur(30px);
+    transform: translateX(-100px) skewX(-15deg);
+}
+
+#button_p2:after {
+    background: rgba(255, 255, 255, 0.2);
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100px) skewX(-15deg);
+}
+
+#button_p2:hover {
+    background: #374624;
+    cursor: pointer;
+}
+
+#button_p2:hover:before {
+    transform: translateX(300px) skewX(-15deg);
+    opacity: 0.6;
+    transition: 0.7s;
+}
+
+#button_p2:hover:after {
+    transform: translateX(300px) skewX(-15deg);
+    opacity: 1;
+    transition: 0.7s;
+}
